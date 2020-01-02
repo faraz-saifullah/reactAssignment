@@ -1,0 +1,121 @@
+@import '../../../assets/css/variables';
+@import '../../../assets/css/mixins';
+
+.filters-wrapper {
+  padding: 20px 20px;
+  box-shadow: 0 0 8px 0 rgba(80, 93, 104, 0.06),
+    0 2px 8px 0 rgba(80, 93, 104, 0.12);
+  .divider {
+    border: 0;
+    border-top: 1px solid rgba(233, 233, 233, 0.1);
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  .filters-header {
+    font-size: 13px;
+    font-weight: 600;
+    .filters-title {
+      i {
+        transform: rotate(90deg);
+      }
+    }
+    .filters-clear {
+      text-transform: uppercase;
+      a {
+        color: $color-blue;
+        text-decoration: none;
+      }
+    }
+  }
+  .filters-list {
+    .search-wrapper {
+      border: 1px solid $color-grey;
+      border-radius: 5px;
+      height: 45px;
+      margin-top: 20px;
+      padding: 0 15px;
+      i {
+        color: $color-lightgrey;
+        font-size: 20px;
+      }
+      input {
+        @include appearance(none);
+        border: 0;
+        box-shadow: none;
+        outline: 0;
+        overflow: hidden;
+        padding-left: 10px;
+        width: 100%;
+      }
+    }
+    .searchtype-wrapper {
+      button {
+        align-items: center;
+        font-size: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        margin-top: 13px;
+        max-height: 28px;
+        min-width: 80px;
+        & + label {
+          margin-left: -1px;
+        }
+        &.btn-default {
+          box-shadow: 0 0 2px $color-grey-3;
+          color: $color-grey-2;
+        }
+        &.active {
+          background-color: #fff;
+          border-color: #efefef;
+          box-shadow: 0 0 4px #d7d7d7;
+          color: $color-blue-2;
+        }
+      }
+    }
+    .searchtype-tip {
+      padding-bottom: 1px;
+      h5 {
+        color: #a1a1a1;
+        font-size: 0.6rem;
+        line-height: 15px;
+        margin-top: 8px;
+        text-align: center;
+        span {
+          border: 1px solid #bfbfbf;
+          border-radius: 50%;
+          cursor: pointer;
+          padding-left: 4px;
+          padding-right: 4px;
+        }
+      }
+    }
+    .searchtype-info {
+      background: white;
+      border: 1px solid #f8f8f8;
+      box-shadow: 0 4px 4px #cccccc;
+      display: none;
+      position: absolute;
+      padding: 12px 8px;
+      top: 130px;
+      z-index: 2;
+      &.active {
+        display: block;
+      }
+      span {
+        color: #a1a1a1;
+        cursor: pointer;
+        float: right;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      h5 {
+        color: #a1a1a1;
+        font-size: 0.6rem;
+        margin-top: 8px;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+  }
+}

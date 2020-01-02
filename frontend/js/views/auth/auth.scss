@@ -1,0 +1,32 @@
+.show-password {
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  color: #c2d1d9;
+  font-size: 10px;
+}
+
+.show-password i {
+  margin-left: 5px;
+}
+
+.password-section {
+  position: relative;
+}
+
+.auth-header {
+  top: 0;
+  right: 0;
+  background: #333333;
+  height: 120px;
+  width: 100%;
+}
+
+.auth-wrapper {
+  position: relative;
+}
+
+.auth-body {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}

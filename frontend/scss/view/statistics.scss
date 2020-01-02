@@ -1,0 +1,387 @@
+@import './../variables/common.scss';
+
+.statistics-wrapper {
+  .stat-date-picker {
+    .stat-datepicker {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0px;
+      flex-wrap: wrap;
+      > div {
+        width: 45%;
+      }
+    }
+  }
+  .stat-like-picker {
+    width: 93%;
+  }
+  .stat-like-picker .ant-slider-handle-2 {
+    border: 12px solid $clear-blue;
+    top: 0%;
+  }
+}
+.statistics-wrapper {
+  width: 100%;
+  position: relative;
+
+  & .statistics-body {
+    display: flex;
+    flex-direction: column;
+    height: fill-available;
+    height: -webkit-fill-available;
+    & > div:first-of-type {
+      flex: 2;
+      background: $color-white;
+    }
+    & > div:last-child {
+      flex: 10;
+      background-color: #f9f9f9;
+    }
+  }
+
+  .stat-placeholder {
+    height: 15px;
+  }
+
+  .faded-text {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #8a8a8a;
+  }
+
+  .bold-text {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: $black;
+    margin: 0;
+  }
+
+  .faded-symbols {
+    font-size: 12px;
+    color: #a4a4a4;
+  }
+}
+
+.statistics-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: fill-available;
+  height: -webkit-fill-available;
+  & > div {
+    width: 80%;
+    margin: 5vh auto 0 auto;
+
+    & > span {
+      font-size: 28px;
+      line-height: 1.36;
+      color: $black;
+    }
+
+    & > div {
+      background: $color-white;
+      height: 90vh;
+      padding: 10px;
+      padding-top: 5vh;
+      border-radius: 2px;
+      box-shadow: 0 19px 38px 0 rgba(0, 0, 0, 0.3),
+        0 15px 12px 0 rgba(238, 185, 185, 0.22);
+      border-style: solid;
+      border-width: 0.5px;
+      border-image-source: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.4) 5%,
+        rgba(255, 255, 255, 0) 20%,
+        rgba(255, 255, 255, 0)
+      );
+      border-image-slice: 1;
+      background-image: $color-white,
+        linear-gradient(
+          to top,
+          rgba(255, 255, 255, 0.8),
+          rgba(255, 255, 255, 0.4) 5%,
+          rgba(255, 255, 255, 0) 20%,
+          rgba(255, 255, 255, 0)
+        );
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+      overflow: auto;
+
+      & > div {
+        width: 90%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.statistics-mix {
+  display: flex;
+  justify-content: space-between;
+
+  & > div:first-child {
+    flex: 2.4;
+    & > div {
+      width: 93%;
+    }
+  }
+
+  & > div:last-child {
+    flex: 1;
+  }
+
+  & .stat-search-bar {
+    display: flex;
+    width: 100%;
+
+    .stat-input-form {
+      flex: 1.5;
+      flex-shrink: 3;
+      & > div {
+        display: flex;
+        padding: 9px 10px;
+        border-radius: 3px;
+        border: solid 1px #c2d1d9;
+        width: 93%;
+        overflow: hidden;
+        span {
+          max-width: 20px;
+        }
+        input {
+          border: none;
+          outline: none;
+          padding-left: 5px;
+          flex: 1;
+          &::placeholder {
+            font-size: 14px;
+            color: #a4a4a4;
+          }
+        }
+      }
+    }
+  }
+
+  & .stat-toggle-button {
+    flex: 0.5;
+    flex-shrink: 1;
+
+    .stat-button-active-font-color {
+      font-size: 10px;
+      font-weight: bold;
+      color: $clear-blue;
+    }
+
+    .stat-toggle-button-footer {
+      width: 80%;
+      max-width: 300px;
+      text-align: left;
+      font-size: 10px;
+      font-weight: 500;
+      margin-top: 10px;
+      color: #8a8a8a;
+    }
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > .stat-toggle-button-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        max-width: 300px;
+        border-radius: 4px;
+        position: relative;
+        color: #a4a4a4;
+        font-size: 10px;
+        cursor: pointer;
+        height: 43px;
+        border: solid 1px $very-light-blue;
+
+        & > .stat-toggle-button-active {
+          height: 20px;
+          width: 98%;
+          transform: translateY(99%);
+          position: absolute;
+          top: 0;
+          transition-duration: 0.2s;
+          border-radius: 4px;
+          border: solid 1px #dbdbdb;
+        }
+      }
+    }
+  }
+}
+
+.stat-tags-wrapper {
+  > h5 {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+
+  > .stat-tags {
+    display: flex;
+    flex-wrap: wrap;
+    > div {
+      font-size: 12px;
+      font-weight: 550;
+      background: #f9f9f9;
+      border-radius: 2rem;
+      padding: 4px 6px;
+      margin: 2px 5px;
+      display: flex;
+      color: $black;
+      justify-content: center;
+      align-items: center;
+      > span {
+        margin: 0px 1px;
+        &:last-child {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.stat-range-datepicker-wrapper {
+  > div {
+    margin-top: 30px;
+    display: flex;
+    > div:first-child > div {
+    }
+  }
+  .stat-rangepickers-wrapper {
+    flex: 2.4 !important;
+  }
+
+  .stat-rangepickers-row {
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    > div {
+      width: 45%;
+    }
+  }
+  .stat-datepicker-wrapper {
+    flex: 1;
+  }
+
+  .stat-rangepicker-legend span:first-child {
+    transform: translateX(-60%);
+  }
+
+  .stat-rangepicker-legend span:last-child {
+    transform: translateX(60%);
+  }
+}
+
+.bubble-chart-wrapper {
+  width: 100%;
+  height: 35vh;
+  position: relative;
+  margin-top: 5vh !important;
+
+  .recharts-scatter-symbol path {
+    fill: $clear-blue;
+    stroke: rgba(51, 51, 51, 0.2);
+    stroke-width: 2px;
+  }
+
+  .recharts-cartesian-axis.recharts-yAxis line {
+    display: none;
+  }
+
+  .recharts-cartesian-axis.recharts-xAxis line {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 885px) {
+  .stat-datepickers > div {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .statistics-mix {
+    flex-direction: column;
+  }
+  .stat-range-datepicker-wrapper > div {
+    flex-direction: column;
+  }
+  .stat-datepickers {
+    justify-content: space-between;
+    & > div {
+      width: 50% !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .stat-rangepickers-row {
+    flex-direction: column;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+    & > div {
+      width: 93% !important;
+      margin: 0px auto;
+    }
+  }
+  .stat-datepickers > div {
+    width: 47% !important;
+    margin-right: 0 !important;
+  }
+  .statistics-mix > div:first-child > div {
+    width: 100% !important;
+  }
+  .stat-range-datepicker-wrapper > div > div:first-child > div {
+    width: 96% !important;
+  }
+  .statistics-content > div > div {
+    padding-right: 0;
+    padding-left: 0;
+    height: fit-content;
+  }
+
+  .stat-like-picker {
+    width: 93%;
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .statistics-mix > div:first-child > div {
+    width: 100% !important;
+  }
+  .stat-range-datepicker-wrapper > div > div:first-child > div {
+    width: 100% !important;
+  }
+  .statistics-content > div {
+    width: 100% !important;
+    margin: 0;
+    & > span {
+      display: none;
+    }
+    & > div {
+      height: -webkit-fill-available;
+      height: fill-available;
+      box-shadow: none;
+    }
+  }
+}

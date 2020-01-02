@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: build
+    destination: /var/www/html
+hooks:
+  BeforeInstall:
+    - location: scripts/remove_old.sh
+  ApplicationStart:
+    - location: scripts/adjust_env.sh

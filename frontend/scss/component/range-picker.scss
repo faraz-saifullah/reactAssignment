@@ -1,0 +1,31 @@
+@import './../variables/common.scss';
+
+.range-picker-wrapper {
+  .input-range-form-wrapper {
+    > div {
+      display: flex;
+      > div {
+        align-items: center;
+        padding: 10px 0px;
+        > span:first-child {
+          display: inline-block;
+          width: 30%;
+          margin-right: 5px;
+        }
+        > span:last-child {
+          display: inline-block;
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .ant-slider-handle {
+    background: $clear-blue;
+    border: 1px solid $clear-blue;
+  }
+
+  .ant-slider-track {
+    background-color: #8a8a8a;
+  }
+}

@@ -1,0 +1,35 @@
+.collapsable-wrapper {
+  position: relative;
+  .arrow-icon {
+    cursor: pointer;
+    position: absolute;
+    // top: -16px;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    line-height: 1;
+
+    span {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .arrow-roatate-up {
+    transform: rotateZ(180deg);
+    transition-duration: 0.3s;
+  }
+  .arrow-roatate-down {
+    transform: rotateZ(0deg);
+    transition-duration: 0.3s;
+  }
+  .translate-down {
+    transition-duration: 0.1s;
+  }
+  .translate-up {
+    transform: translateY(-500%);
+    transition-duration: 0.1s;
+  }
+}

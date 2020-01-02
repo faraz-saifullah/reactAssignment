@@ -1,0 +1,28 @@
+@import '../../../assets/css/variables';
+@import '../../../assets/css/mixins';
+
+.active-next-btn {
+  color: white !important;
+  background-color: $color-blue !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.handle-back.mt-4.float-right {
+  margin-top: 40px !important;
+  margin-right: 30%;
+  font-weight: bold;
+}
+
+.anony-checkbox {
+  cursor: pointer;
+}
+
+.anony-label {
+  padding-left: 20px;
+  padding-top: 2px;
+}

@@ -1,0 +1,20 @@
+@import '../../../assets/css/variables';
+@import '../../../assets/css/mixins';
+
+.author-wrapper {
+  float: right;
+  width: 100%;
+  .usertext {
+    h5 {
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+    }
+    p {
+      color: #c5c5c5;
+      font-size: 0.7rem;
+    }
+  }
+  .userimg {
+    width: 40px;
+  }
+}

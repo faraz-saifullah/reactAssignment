@@ -1,0 +1,33 @@
+@import '../../../assets/css/variables';
+@import '../../../assets/css/mixins';
+
+.filters-tag {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  overflow: hidden;
+  h2 {
+    font-size: 12px;
+    margin: 10px 0 8px;
+    text-transform: uppercase;
+  }
+  .btn-tag {
+    cursor: pointer;
+    background: whitesmoke;
+    border-radius: 25px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px 5px 5px 5px;
+    padding: 5px 13px;
+    span {
+      font-weight: 900;
+    }
+  }
+}
+
+.filters-tag.statistics {
+  height: 110px;
+  margin-bottom: 25px;
+  margin-top: 0px;
+}

@@ -1,0 +1,230 @@
+@import '../../../assets/css/variables';
+@import '../../../assets/css/mixins';
+
+.idea-details-container {
+  border-radius: 4px;
+  box-shadow: 0 4px 15px 0 rgba(80, 93, 104, 0.25);
+  background-color: #ffffff;
+  width: auto;
+}
+.idea-details-container .idea-back {
+  background: #f2f5f7;
+  padding: 12px 25px;
+}
+.idea-details-container .idea-back button {
+  color: #333333;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.idea-details-container .idea-details {
+  padding: 20px 15px 40px 15px;
+}
+.idea-details-container small {
+  font-size: 10px;
+  color: #8a8a8a;
+  margin-bottom: 0rem !important;
+}
+
+.idea-details-container .idea-details p,
+.idea-details-container .idea-details .collapse,
+.collapsing {
+  color: #a1aeb7 !important;
+  font-size: 12px !important;
+  text-align: justify !important;
+}
+.idea-details-container .idea-details p {
+  margin-bottom: 0px;
+}
+
+.idea-details-container .idea-details p,
+.idea-details-container .idea-details button {
+  color: #2d8dfc;
+  white-space: pre-line;
+  text-decoration: none !important;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.comment-container {
+  font-size: 12px;
+  padding: 15px;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+}
+.comment-container .comment-author {
+  color: rgba(80, 80, 80, 0.87);
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+}
+.comment-date {
+  font-size: 10px;
+  color: #8a8a8a;
+}
+.comment-body {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #a4a4a4;
+}
+.comment-reply a {
+  color: #8a8a8a;
+  font-size: 10px;
+  text-decoration: none;
+}
+.comment-reply a .fas {
+  font-size: 12px !important;
+  margin-right: 2px;
+}
+.idea-attachments .attachment-container {
+  width: 150px;
+  height: 110px;
+  font-size: 10px;
+  color: #8a8a8a;
+  text-align: justify !important;
+}
+.idea-attachments .attachment-container .attachment {
+  width: 150px;
+  height: 110px;
+  background: #f7f7f8;
+  font-size: 50px;
+  color: #96a7bb;
+  justify-content: center;
+  align-items: center;
+}
+.like-container {
+  flex-direction: column;
+  width: 100%;
+  background: #f8fbff;
+}
+.like-container .likes-number {
+  color: #2d8dfc;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  font-size: 10px;
+}
+.idea-features ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+.idea-features ul li {
+  display: inline-block;
+  font-size: 10px;
+}
+.idea-features ul p {
+  font-size: 10px !important;
+  color: #333333 !important;
+}
+.idea-features i {
+  font-size: 20px;
+  vertical-align: bottom;
+  color: #f0ca10;
+}
+.idea-features .icon-holder {
+  padding: 5px;
+  border-radius: 50px;
+  background: #fdf8db;
+}
+
+.comment-file-input > div:nth-child(1) {
+  width: 45px;
+  display: inline-block;
+}
+
+.comment-file-input > div:nth-child(2) {
+  display: inline-block;
+}
+
+.comment-file-input .files-dropzone-list {
+  height: inherit !important;
+}
+
+.comment-file-input a {
+  border: none;
+  min-width: 20px;
+}
+
+.comment-file-item {
+  border: solid 1px #ececec;
+  padding: 2px;
+  border-radius: 2px;
+  color: #2d8dfc;
+  font-size: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.comment-file-item a {
+  color: black;
+}
+
+.rounded-circle.attachment-img {
+  width: 100px;
+  height: 100px;
+}
+
+.attachment-padding {
+  padding-top: 0px;
+  margin-top: 10px;
+}
+
+.active-next-btn {
+  color: white !important;
+  background-color: #2d8dfc !important;
+}
+
+.comment-files {
+  margin-top: 10px;
+}
+.btn.btn-md.label-bordered.role-tag {
+  cursor: unset;
+  color: #2d8dfc;
+}
+.comment-anony {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  margin-top: 9px;
+  margin-right: 15px;
+}
+.add-reply-footer {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+.reply-anony {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  margin-top: 24px;
+  margin-right: 15px;
+}
+.attachment-title div {
+  cursor: pointer;
+}
+
+.next-btn {
+  color: $color-blue;
+  background: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 10px 20px;
+  margin-bottom: 30px !important;
+  letter-spacing: 0.5px;
+  &:hover {
+    background: $color-blue-hover;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .next-btn {
+    padding: 3px 15px;
+    margin-top: 10px;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}

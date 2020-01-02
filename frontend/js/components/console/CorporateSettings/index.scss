@@ -1,0 +1,227 @@
+@import '../../../../assets/css/variables';
+@import '../../../../assets/css/mixins';
+
+.action-btn {
+  max-width: 243px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.corporate-setting-title {
+  font-size: 21px;
+  line-height: 1.48;
+}
+
+.corporate-setting-sub-title {
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.corporate-setting-description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.sample-email-title {
+  font-size: 12px;
+  color: $color-main;
+}
+
+.preview {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.button-tags {
+  width: 64px;
+  height: 24px;
+  padding: 5px 0px 5px 5px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.modal3-tags {
+  width: 45px;
+  height: 24px;
+  padding: 5px 0px 5px 5px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 10px;
+  margin-left: 10px;
+}
+
+.code-field {
+  border-left: none;
+  height: 40px;
+}
+
+.color-hash {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: #dbdbdb;
+}
+
+.modal-color-picker {
+  content: '';
+  width: 122px;
+  height: 122px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(51, 51, 51, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: #fafafa;
+}
+
+.modal3-color-picker {
+  padding: 0.5rem;
+  width: 150px;
+  height: 123px;
+  border-radius: 4px;
+}
+
+.sample-email-large-desc {
+  font-family: Noto Sans SC;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #c2d1d9;
+}
+
+.color-2-preview {
+  text-align: left;
+  padding: 10px 10px 0px 10px;
+}
+
+.color-3-preview {
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+}
+
+.color-picker {
+  width: 45px;
+  height: 45px;
+  box-shadow: 0px 4px 4px rgba(51, 51, 51, 0.12),
+    0px 0px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+.logo-sub-description {
+  font-size: 10px;
+  line-height: 1.48;
+  text-align: center;
+  color: rgba(51, 51, 51, 0.6);
+}
+
+.main-image {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px;
+  border-radius: 100%;
+  text-align: center;
+  width: 116px;
+  height: 116px;
+  background: $color-main;
+  img {
+    max-width: 100%;
+    border-radius: 100%;
+  }
+}
+
+.secondary-image {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 15px;
+  border-radius: 100%;
+  text-align: center;
+  width: 116px;
+  height: 116px;
+  background: #fafafa;
+  img {
+    max-width: 100%;
+    border-radius: 100%;
+  }
+}
+
+.sample-email-bg {
+  background-color: #fcfcfc;
+  padding: 1rem 8rem;
+}
+
+.sample-email-image {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.sample-email-preview-small {
+  padding: 12px 12px;
+  border: 3px solid #efefef;
+  margin: 0px 15px;
+  .sample-email-image {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  .sample-email-text {
+    font-size: 4px;
+  }
+  button {
+    font-size: 4px;
+  }
+  .mt-2 {
+    margin-top: 3px !important;
+  }
+  .mt-5,
+  .my-5 {
+    margin-top: 8px !important;
+  }
+}
+
+.sample-email-preview-modal {
+  background-color: #fff;
+}
+
+.file-input {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip-container {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid silver;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  margin: 0.4rem;
+  padding: 0.4rem;
+  transition: opacity 0.3s;
+  z-index: 2147483647;
+  width: 25%;
+  align-content: center;
+  text-align: center;
+}
+
+.select-box {
+  width: 100%;
+  background-color: #fafafa;
+  border: 1px solid #007bff;
+  color: #007bff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0px 5px 0px 5px;
+  option {
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #007bff;
+  }
+}

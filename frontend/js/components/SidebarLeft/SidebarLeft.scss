@@ -1,0 +1,114 @@
+@import '../../../assets/css/variables';
+@import '../../../assets/css/mixins';
+
+.sidebar-column {
+  background-color: var(--sidebar-background-color);
+  max-height: 100%;
+  min-height: 100vh;
+  padding: 0 !important;
+}
+nav:focus,
+.bm-item:focus {
+  outline: none;
+}
+.sidebar-wrapper {
+  .logo {
+    .logoimg {
+      display: block;
+      margin: 0 auto;
+      padding: 19px 17px 15px 1vw;
+      width: 79px;
+      height: 97px;
+    }
+  }
+  .newidea {
+    background: $color-blue;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.73vw;
+    font-weight: bold;
+    height: 3vw;
+    margin: 0 auto;
+    min-width: 50%;
+    width: 10.55vw;
+    max-width: 176px;
+    letter-spacing: 0.5px;
+  }
+
+  nav {
+    li {
+      list-style: none;
+      padding-left: 2.8vw;
+      a {
+        text-decoration: none;
+      }
+    }
+    & > ul {
+      margin: 0;
+      padding: 0 0 0 0;
+      & > li {
+        &:first-child {
+          margin-top: 45px;
+        }
+        & > a {
+          color: #f9f9f9;
+          font-size: 16px;
+          line-height: 45px;
+          list-style: none;
+        }
+        & > ul {
+          & > li {
+            margin-left: -5.8vw;
+            padding-left: 4.8vw;
+            &:first-child {
+              margin-top: 0;
+            }
+            & > a {
+              color: #d4d4d4;
+              font-size: 14px;
+              line-height: 30px;
+            }
+          }
+          & > li.active {
+            background: rgba(255, 255, 255, 0.1);
+            border-right: 3px solid #2d8dfc;
+          }
+        }
+      }
+      & > li.active {
+        background: rgba(255, 255, 255, 0.1);
+        border-right: 3px solid #2d8dfc;
+      }
+    }
+  }
+}
+
+.active-next-btn {
+  color: white !important;
+  background-color: $color-blue !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.submit-idea-btn {
+  margin-top: 20px !important;
+}
+
+.anony-checkbox {
+  cursor: pointer;
+}
+
+.anony-label {
+  padding-left: 20px;
+  padding-top: 2px;
+}
